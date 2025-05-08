@@ -1,6 +1,149 @@
 @import "tailwindcss";
+@import 'flowbite';
 
-.card{
-    /* background: transparent; */
-    backdrop-filter: blur;
+
+@media (max-width: 768px) {
+    .bar {
+      display: block;
+    }
+  
+    .ul {
+      display: none; /* Hide the main menu on smaller screens initially */
+    }
+  }
+
+
+
+
+@media (max-width:600px) {
+    .ul{
+        display: none;
+    }  
+    .ul li{
+        display: none;
+      }
+    .card{
+        margin-left:-0;
+        z-index: 0;
+    
+        /* width: 500px; */
+        /* height: auto; */
+        backdrop-filter: none;
+        background-color: white;
+        
+    }
+
+    .card div{
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+    }
+  .foot{
+    flex-wrap: wrap;
+  }
 }
+
+
+.app.light {
+    --primary: #5E4AE3;
+    --primary-text: #ffffff;
+    --secondary-bg: #ffffff;
+    --secondary-text: #333333;
+    --secondary-border: #cccccc;
+  }
+  
+  .app.dark {
+    --primary: #333333;
+    --primary-text: #ffffff;
+    --secondary-bg: #1A1A1A;
+    --secondary-text: #f0f0f0;
+    --secondary-border: #555555;
+  }
+  
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+  }
+  
+  .bg-primary {
+    background-color: var(--primary);
+  }
+  
+  .text-primary {
+    color: var(--primary);
+  }
+  
+  .text-primary-text {
+    color: var(--primary-text);
+  }
+  
+  .bg-secondary-bg {
+    background-color: var(--secondary-bg);
+  }
+  
+  .text-secondary-text {
+    color: var(--secondary-text);
+  }
+  
+  .border-secondary-border {
+    border-color: var(--secondary-border);
+  }
+  
+  .ul li {
+    color: var(--primary-text);
+  }
+  
+  .ul button {
+    color: var(--primary-text);
+  }
+  
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: var(--primary-text);
+    cursor: pointer;
+    font-size: 1.5rem;
+    outline: none;
+  }
+  
+  .bar {
+    background: none;
+    border: none;
+    color: var(--primary-text);
+    cursor: pointer;
+    font-size: 1.5rem;
+    outline: none;
+    display: none; /* Hide for larger screens */
+  }
+ 
+  .grocery-card:hover{
+    border-bottom: 4px solid var(--primary);
+    color: var(--primary-text);
+  }
+  .watch-btn{
+    color: var(--primary);
+    background-color: var(--primary-text);
+  }
+  .back-btn:hover{
+     background-color: var(--primary);
+     color: var(--primary-text);
+  }
+  /* Responsive adjustments for the bar icon */
+
+  
+  .foot {
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+  }
+  
+  .foot h4 {
+    color: var(--secondary-text);
+  }
+  
+  .foot p {
+    color: var(--secondary-text);
+  }
+  
+  .foot ul li {
+    color: var(--secondary-text);
+  }
